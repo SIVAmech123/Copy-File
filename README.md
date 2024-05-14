@@ -28,15 +28,15 @@ The four function is used to take each line from the main file.
 #To write a python program for reading content from a CSV file.
 #Developed by: SIVAKUMAR.R
 #Register Number: 212223230209
-import pandas as pd
-df = pd.read_csv('nba.csv')
-print(df.head(10))
-print(df.tail())
-print("Number of rows:",len(df.axes[0]))
-print("Number of columns:",len(df.axes[1]))
+with open("text.txt", "r") as fp:
+    msg1 = fp.read()
+with open("copy.txt","w") as fp1:
+    fp1.write(msg1)
+
 ```
 ### OUTPUT:
-![Screenshot 2024-05-10 185246](https://github.com/SIVAmech123/Copy-File/assets/151629067/92d179a0-f61b-44cf-b3ba-5b2994ebddf7)
+![image](https://github.com/SIVAmech123/Copy-File/assets/151629067/b78bd4cf-d682-4115-96ac-3dd81711f00d)
+
 
 
 
